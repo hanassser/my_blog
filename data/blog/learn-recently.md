@@ -1,6 +1,6 @@
 ---
-title: "What I'm learning recently"
-date: '2024/3/29'
+title: "What am I learning recently"
+date: '2024/3/30'
 lastmod: '2022/3/10'
 tags: [Java, Spring, OOP, documentation]
 draft: false
@@ -12,7 +12,6 @@ layout: PostLayout
 
 ## Think About Language
 
-[//]: # '![unDraw](/static/images/level_of_programming_language.webp)'
 
 I got a striking feeling that I've been missing some crucial understanding.
 Yes, here it comes. About programming language, think about it.  
@@ -25,17 +24,41 @@ So always remind, programming language is language. And what is the essence of l
 
 - **Abstraction** **Abstraction** **Abstraction**
 
-And OOP approach is about mapping the elements in the problem space into the objects in the solution space.
+OOP approach is about mapping the elements in the problem space into the objects in the solution space.
 
 [//]: # 'Ask myself.  '
 
+## My Problems
 Now I realized why I got stuck in coding sometimes.
 
 - Not familiar with the syntax and API, so I can't find the right word to say it.
 - Not familiar with the best practice, so I don't know how to optimize code.
 
-To solve this, I decided to really dive into the documentation of JDK 17 and Spring.
+## My Solutions
+To solve this, I decided to really dive into the documentation of [JDK 17](https://docs.oracle.com/en/java/javase/17/docs/api/) and [Spring](https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/index.html).
+(I should do this everytime. Identify the problem, find the solution, do it, find better way to do it, do it...) Bah bah bah!  
+In details, the plan is, first get the whole structure of JDK 17 and Spring. Then read the most used part of them.
+(I hate to check the documentation each time coz I don't remember the most used part by heart. How can this be so hard? 
+It's my problem.) Read, read and carve them into my mind like a circuit board. (write more and more then I shall remember).
+More specifically, for example, I should recite the most used 10 methods of each API class, like Collections, Map...
+Know exactly what does these APIs do and when to use them, why use this class not the other class.
 
-[//]: #
-[//]: # '确定设计图的主色，我们在 https://colorhunt.co/ 可以根据主色搜索，或者插画中的颜色搜索'
-[//]: # '![小马设计的公众号首图](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8f8732dad3c4842a641ec8ef987aac5~tplv-k3u1fbpfcp-zoom-1.image)'
+## Ohh, Iteration!  
+I've been thinking about iteration recently. For-loop. Small accumulation at each step. After thousands and thousands of iteration.
+Something great must happen. Singularity.
+Evolution. Machine. Human. 
+Time Complexity and Space Complexity. **Time and Space**.
+Should think often in these two aspects.
+
+## Interface
+**Ghost in the shell** is a great manga. There are information everywhere, but people don't have interface to receive it.
+Think about what kind of information do I want to receive? Then build my interfaces correctly.
+
+## Optimize Code
+First focus on solve the problem, no matter how dump the way is. Once the problem is solved, think at least 3 steps further about optimization.
+In terms of Time Complexity and Space Complexity. Don't just stop at 1 step. 
+The reason of doing in this way is that try optimise and solve at the same time often got me confused during the thinking process.
+Better do one thing at a step. Step by step. Clear.  
+千里之行，积于跬步。  
+Like the traditional chinese saying, a journey of a thousand miles is accumulated in small steps.
+

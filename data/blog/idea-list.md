@@ -1,11 +1,11 @@
 ---
 title: 'List of what I want to write about'
-date: '2024/3/30'
+date: '2024/3/29'
 lastmod: '2022/3/10'
 tags: [Topic]
 draft: false
 summary: ' '
-images: [/static/images/idea.jpg]
+images: [/static/images/idea.png]
 layout: PostLayout
 ---
 
