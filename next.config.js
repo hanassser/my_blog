@@ -1,7 +1,7 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
   output: 'export',
-  basePath: '/my_blog',
+  basePath: '/my_blog'
 })
 
 // 如果您使用的是外部服务，则可能需要在script-src中插入其他域
