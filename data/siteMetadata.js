@@ -5,8 +5,8 @@ const siteMetadata = {
   description: 'Record my learning process',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://maqib.cn',
-  siteRepo: 'https://github.com/maqi1520/nextjs-tailwind-blog',
+  siteUrl: '',
+  siteRepo: '',
   // siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar2.jpg',
   socialBanner: '/static/images/twitter-card.png',

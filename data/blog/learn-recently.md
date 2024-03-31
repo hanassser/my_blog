@@ -5,7 +5,7 @@ lastmod: '2022/3/10'
 tags: [Java, Spring, OOP, documentation]
 draft: false
 summary: "Recently I've been re-read the book <Thinking in Java>. 
-I also started to read the documentation of Spring Framework and Java 17 very carefully... "
+I also started to read the documentation of Spring Framework and Java 17 very carefully. "
 images: [/static/images/language.png]
 layout: PostLayout
 ---
@@ -22,9 +22,16 @@ Writing software is communicating with computer. I want the computer to solve pr
 
 So always remind, programming language is language. And what is the essence of language?
 
-- **Abstraction** **Abstraction** **Abstraction**
-
-OOP approach is about mapping the elements in the problem space into the objects in the solution space.
+- **Abstraction** **Abstraction** **Abstraction**  
+  
+And, what are the key characteristics of this language? like Java? How do I describe Java in 5 key words?
+- Platform-independent
+- Object-oriented
+- Robust
+- Scalable
+- Secure  
+  
+Then explain these characteristics.
 
 [//]: # 'Ask myself.  '
 
