@@ -1,5 +1,6 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
+  output: 'export',
 })
 
 // 如果您使用的是外部服务，则可能需要在script-src中插入其他域
@@ -61,14 +62,14 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: securityHeaders,
-      },
-    ]
-  },
+  // async headers() {
+  //   return [
+  //     {
+  //       source: '/(.*)',
+  //       headers: securityHeaders,
+  //     },
+  //   ]
+  // },
   async redirects() {
     return [
       {
@@ -96,6 +97,7 @@ module.exports = withBundleAnalyzer({
     ignoreBuildErrors: true,
   },
   images: {
+    unoptimized: true,
     loader: 'custom',
     loaderFile: './image-loader.js',
   },
