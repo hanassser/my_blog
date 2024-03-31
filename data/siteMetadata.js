@@ -7,13 +7,13 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: '',
   siteRepo: '',
-  // siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/logo2.png',
   image: '/static/images/avatar2.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'ariyaisme@gmail.com',
   github: 'https://github.com/hanassser',
   locale: 'en-us',
-  welcome: '自在，轻盈，我本不想停留',
+  welcome: '',
   analytics: {
     //如果要使用分析提供程序，则必须将其添加到。
     //`next.config.js`文件中的内容安全策略。

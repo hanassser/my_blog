@@ -11,7 +11,8 @@ layout: PostLayout
 
 ## Meta-Thinking
 Attention! Attention!! Attention!!!
-If I think the same way, I won't get different result.
+If I think the same way, I won't get different result. 
+Action traces back to think.
 So it's crucial to know Meta-Thinking.
 Meta-Thinking is Thinking about Thinking, or being aware of one's own thought processes.
 It involves reflecting on 

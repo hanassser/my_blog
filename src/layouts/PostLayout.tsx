@@ -87,7 +87,7 @@ export default function PostLayout(props: Props) {
                           />
                         )}
                         <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                          <dt className="sr-only">作者</dt>
+                          <dt className="sr-only">Author</dt>
                           <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
                         </dl>
                       </li>
