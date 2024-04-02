@@ -4,7 +4,8 @@ date: '2024/4/1'
 lastmod: '2022/3/10'
 tags: [Design pattern]
 draft: false
-summary: ""
+summary: "Design patterns are typical solutions to commonly occurring problems in software design.
+They are like pre-made blueprints that you can customize to solve a recurring design problem in your code."
 images: [/static/images/design-pattern.png]
 layout: PostLayout
 ---
@@ -32,14 +33,14 @@ A pattern is a more high-level description.
 
 ## Classification of patterns (by their intent)
 - **Creational patterns**
-  - provide object creation mechanisms that increase flexibility and reuse of existing code.
+  provide object creation mechanisms that increase flexibility and reuse of existing code.
     - Factory Method
     - Abstract Factory
     - Builder
     - Prototype
     - Singleton
 - **Structural patterns**
-  - explain how to assemble objects and classes into larger structures, while keeping the structures flexible and efficient.
+  explain how to assemble objects and classes into larger structures, while keeping the structures flexible and efficient.
     - Adapter
     - Bridge
     - Composite
@@ -48,7 +49,7 @@ A pattern is a more high-level description.
     - Flyweight
     - Proxy
 - **Behavioral patterns**
-  - take care of effective communication and the assignment of responsibilities between objects.
+  take care of effective communication and the assignment of responsibilities between objects.
     - Chain of Responsibility
     - Command
     - Iterator

@@ -4,7 +4,7 @@ date: '2024/3/30'
 lastmod: '2022/3/10'
 tags: [Java, OOP]
 draft: false
-summary: "Re-read the book <Thinking in Java>."
+summary: "I'm re-reading the book <Thinking in Java> and writing the example code in the book."
 images: [/static/images/think2.png]
 layout: PostLayout
 ---

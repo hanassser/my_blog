@@ -1,6 +1,6 @@
 ---
 title: "SOLID design principles"
-date: '2024/3/31'
+date: '2024/3/1'
 lastmod: '2022/3/10'
 tags: [Design pattern]
 draft: false

@@ -4,7 +4,7 @@ date: '2024/3/30'
 lastmod: '2024/4/1'
 tags: [Java, OOP]
 draft: false
-summary: ""
+summary: "The two core technologies are Inversion of control and Aspect-oriented programming."
 images: [/static/images/spring.png]
 layout: PostLayout
 ---
