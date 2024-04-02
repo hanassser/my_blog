@@ -1,21 +1,24 @@
 ---
-title: "Some understanding of Spring Framework"
-date: '2024/3/30'
-lastmod: '2024/4/1'
-tags: [Java, OOP]
+title: "SOLID design principles"
+date: '2024/3/31'
+lastmod: '2022/3/10'
+tags: [Design pattern]
 draft: false
 summary: ""
-images: [/static/images/spring.png]
+images: [/static/images/design-pattern.png]
 layout: PostLayout
 ---
 
+## What is Design Pattern
 
-## Spring Framework
-[All versions of Spring Framework documentation](https://docs.spring.io/spring-framework/docs/)  
 
-I started with [4.0.x](https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/index.html) coz I find its layout well-structured and easy to get on. 
-Also, I've chosen [5.3.x](https://docs.spring.io/spring-framework/docs/5.3.x/reference/html/index.html) and the current version [6.1.5](https://docs.spring.io/spring-framework/reference/)
-to gain some comparison perspectives. with [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/index.html) too.
+
+## Design Pattern matters a lot
+
+
+
+
+with [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/index.html) too.
 
 ## My approach
 This time, I remind myself, always treat the documentation as a tree structure. 
@@ -38,14 +41,12 @@ in parallel, the Spring WebFlux reactive web framework.
 
 ![iaa](/static/images/spring-overview.png)
 
-## What is Spring Boot
-We don't need to do the hell configuration XML Bean anymore! Or other configurations!
-The fundamental idea of Spring Boot is **Convention over Configuration** (CoC).
-This means Developers only need to specify the part that is not compliant. Spring Boot configures the convention.
-It saves developers lots of time.
-
+## History
+///
 
 ## Two Core technologies
+
+
   
 - **Inversion of Control (IoC) container.**
 - **AOP framework.**
@@ -56,7 +57,7 @@ This promotes decoupling, flexibility, and easier testing.
 In Spring Framework, IoC is achieved through techniques like dependency injection and is managed by the ApplicationContext container.
 
 AOP is fantastic for decoupling and scalability. Coz I can add new features without changing the source code or function flow.
-Its basic principle is **Dynamic proxy technology**, the same as **Proxy design pattern**. (check out my article about [Design Pattern]()).
+Its basic principle is **Dynamic proxy technology**, the same as **Proxy design pattern**.
 
 ### The IOC container
 

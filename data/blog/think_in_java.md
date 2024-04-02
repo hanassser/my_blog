@@ -24,4 +24,6 @@ Take notes and use drawings. Drawings are much easy to understand and remember. 
 - ///
 - //
 
+## Interfaces
+Interfaces and abstract classes provide a more structured way to separate interface from implementation.
 

@@ -7,7 +7,7 @@ email: ariyaisme@gmail.com
 github: https://github.com/hanassser
 ---
 
-Hello! I'm **Hang DONG**, software engineer based in Paris,France.
+Hello! I'm **Hang DONG**, software engineer based in Paris, France.
 
 Here I write down all my thoughts on learning coding.
 Since I decided to update whenever I got some new thoughts(or blabla),
