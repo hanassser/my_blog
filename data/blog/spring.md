@@ -4,7 +4,7 @@ date: '2024/4/2'
 lastmod: '2024/4/1'
 tags: [Java, OOP]
 draft: false
-summary: "The two core technologies are Inversion of control and Aspect-oriented programming."
+summary: "The three core concepts are Dependency Injection, Inversion of control and Aspect-oriented programming."
 images: [/static/images/spring.png]
 layout: PostLayout
 ---
@@ -26,8 +26,7 @@ So first, get the upper most tree nodes (the most abstract ones). Then, branch o
 || Before drawing this tree of concepts in my mind, get the 10 keywords of Spring Framework to get a first impression.  
 **Dependency Injection, Aspect-Oriented Programming(AOP), Inversion of Control(IOC), Model-View-Controller(MVC), 
 Application Context, Bean, Bean Container, Spring Core, Transaction Management, Spring Data JPA**  
-I shall explain all these concepts later in my words.
-
+They will be explained later.
 
 ## What is Spring Framework
 The Spring Framework is divided into modules (**Spring is modular**). Applications can choose which modules they need. 
@@ -36,14 +35,26 @@ Beyond that, the Spring Framework provides foundational support for different ap
 including messaging, transactional data and persistence, and web. It also includes the Servlet-based Spring MVC web framework and, 
 in parallel, the Spring WebFlux reactive web framework.
 
+## What is Spring Boot
+We don't need to do the hell configuration XML Bean anymore! Or other configurations!
+The fundamental idea of Spring Boot is **Convention over Configuration** (CoC).
+This means Developers only need to specify the part that is not compliant. Spring Boot configures the convention.
+It saves developers lots of time.
+
 ![iaa](/static/images/spring-overview.png)
 
-## What does it solve and how
-What: Spring Framework is an open-source application framework for Java. It provides comprehensive infrastructure support for developing Java applications.
+## What does Spring solve and how
+**What**: Spring Framework is an open-source application framework for Java. It provides comprehensive infrastructure support for developing Java applications.
 It solves various problems in Java development, like complexity in configuration, tight coupling between components, and difficulty in testing.  
-How: 
+**How**: 
+   - `Complexity in configuration`: Instead of manually creating and managing objects and their dependencies, Spring Framework simplifies configuration by introducing `Dependency Injection` and `Inversion of Control`. This approach reduces the complexity of configuration. Developers can focus on writing business logic while letting Spring handle the object creation and wiring.
+   - `Tight coupling between components`: Spring promotes loose coupling between components through Dependency Injection. By injecting dependencies into classes rather than instantiating them internally, Spring decouples components from their dependencies.
+This loose coupling makes components more modular, reusable, and easier to maintain.
+   - `Difficulty in testing`: Traditional Java applications suffer from difficulties in testing due to their tight coupling and complex configuration. Spring Framework makes testing easier by promoting `Dependency Injection` and providing support for integration testing and mocking frameworks.
+With Dependency Injection, dependencies can be easily substituted with mock objects or stubs during testing, allowing developers to isolate and test individual components in isolation.
 
-## Walk through the lifecycle of a Spring project using annotations, from application startup to the execution of a controller method
+## Walk through the lifecycle of a Spring project 
+using annotations, from application startup to the execution of a controller method.
 1. **Bootstrap Process**  
     When I start a Spring application, the Spring container is initialized in the `main()` method. During startup, Spring Boot scans the application's classpath for components annotated with `@Components`, `@Controller`, `@Service`, `@Repository`, and other stereotype annotations. 
     ```Java
@@ -89,31 +100,58 @@ How:
    - When the application shuts down (e.g., when the server is stopped), Spring destroys the beans in the application context.
    - For beans with a `@PreDestroy` annotated method, Spring invokes this method to perform any necessary cleanup before the bean is destroyed.
 
-
-
-## What is Spring Boot
-We don't need to do the hell configuration XML Bean anymore! Or other configurations!
-The fundamental idea of Spring Boot is **Convention over Configuration** (CoC).
-This means Developers only need to specify the part that is not compliant. Spring Boot configures the convention.
-It saves developers lots of time.
-
-
-## Two Core technologies
+## Three core concepts of Spring Framework
   
+- **Dependency Injection**
+  - DI is a design pattern. The dependencies of a class are injected from the outside rather than created internally. 
+  - It helps in decoupling components and make them easier to test, maintain and reuse.
+  - DI can be achieved through 
+    - **constructor injection**
+      ```Java 
+      public class MyClass {
+          private final Dependency dependency;
+
+          public MyClass(Dependency dependency) {
+            this.dependency = dependency;
+          }
+      }
+      ```
+
+    - **setter injection**
+      ```Java 
+      public class MyClass {
+          private Dependency dependency;
+
+          public void setDependency(Dependency dependency) {
+            this.dependency = dependency;
+          }
+      }
+      ```
+    - **field injection**
+      ```Java 
+      public class MyClass {
+          @Autowired
+          private Dependency dependency;
+      }
+      ```
+
 - **Inversion of Control (IoC) container.**
+  IoC is a software engineering **design principle**.
+  The control over object creation and management is shifted from the application code to a framework or container.
+  This promotes decoupling, flexibility, and easier testing.
+  In Spring Framework, IoC is achieved through techniques like dependency injection and is managed by the ApplicationContext container.
 - **AOP framework.**
+  AOP is fantastic for decoupling and scalability. Coz I can add new features without changing the source code or function flow.
+  Its basic principle is **Dynamic proxy technology**, the same as **Proxy design pattern**. (check out my article about [Design Pattern](https://www.hang-dong.work/blog/design-pattern)).
 
-IoC is a software engineering **design principle**.
-The control over object creation and management is shifted from the application code to a framework or container.
-This promotes decoupling, flexibility, and easier testing. 
-In Spring Framework, IoC is achieved through techniques like dependency injection and is managed by the ApplicationContext container.
-
-AOP is fantastic for decoupling and scalability. Coz I can add new features without changing the source code or function flow.
-Its basic principle is **Dynamic proxy technology**, the same as **Proxy design pattern**. (check out my article about [Design Pattern](https://www.hang-dong.work/blog/design-pattern)).
-
-### The IOC container
-
-## Spring Boot
+## The lifecycle of a bean
+- **Instantiation**: Beans are created by the Spring container.
+- **Population of Properties**: Dependencies and properties are injected into the bean.
+- **Bean Post-Processing**: Custom initialization logic can be applied.
+- **Initialization**: Initialization callbacks are invoked.
+- **Bean Ready for Use**: Beans is fully configured and available.
+- **Destruction**: Beans are destroyed when the application context shuts down or explicitly destroyed.
+  
 
 
 
