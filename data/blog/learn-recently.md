@@ -12,8 +12,8 @@ layout: PostLayout
 
 ## Think About Language
 
-
-I got a striking feeling that I've been missing some crucial understanding.
+Recently I've been re-read the book _Thinking in Java_. I also started to read the documentation of Spring Framework and Java 17 very carefully.  
+And I got a striking feeling that I've been missing some crucial understanding.
 Yes, here it comes. About programming language, think about it.  
 It's a **language**, and language is used for communicating.
 In order to use it, I have to know what this language provide, that is to say, know clearly about language's syntax and its API.
