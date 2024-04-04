@@ -4,7 +4,7 @@ date: '2024/4/4'
 lastmod: '2022/3/10'
 tags: [software architecture]
 draft: false
-summary: "Software architecture to a software is like the bones to your body, it's the fundamental structure of a software."
+summary: "Software architecture to a software is like your bones to your body, it's the fundamental structure of a software."
 images: [/static/images/architecture.jpg]
 layout: PostLayout
 ---
