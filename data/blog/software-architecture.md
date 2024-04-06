@@ -1,5 +1,5 @@
 ---
-title: "Exploring software architecture: A comprehensive overview"
+title: "Exploring software architecture: A short overview"
 date: '2024/4/4'
 lastmod: '2022/3/10'
 tags: [software architecture]

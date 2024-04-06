@@ -3,7 +3,7 @@ title: "Thoughts on Engineering"
 date: '2024/3/28'
 lastmod: '2022/3/10'
 tags: [Engineering]
-draft: false
+draft: true
 summary: ""
 images: [/static/images/engineer.png]
 layout: PostLayout

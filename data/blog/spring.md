@@ -141,7 +141,8 @@ using annotations, from application startup to the execution of a controller met
   This promotes decoupling, flexibility, and easier testing.
   In Spring Framework, IoC is achieved through techniques like dependency injection and is managed by the ApplicationContext container.
 - **AOP framework.**
-  AOP is fantastic for decoupling and scalability. Coz I can add new features without changing the source code or function flow.
+  AOP is born for **decoupling** and scalability. It enables modularization of cross-cutting concerns such as logging, security and transaction management. AOP allows developers to separate these concerns from the business logic and add them declaratively to the application.
+  Developers can add new aspect without changing the source code or function flow.
   Its basic principle is **Dynamic proxy technology**, the same as **Proxy design pattern**. (check out my article about [Design Pattern](https://www.hang-dong.work/blog/design-pattern)).
 
 ## The lifecycle of a bean
