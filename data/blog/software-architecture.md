@@ -1,6 +1,6 @@
 ---
 title: "Exploring software architecture: A short overview"
-date: '2024/4/4'
+date: '2024/4/8'
 lastmod: '2022/3/10'
 tags: [software architecture]
 draft: false

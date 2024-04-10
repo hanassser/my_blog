@@ -9,7 +9,7 @@ we always want to use less time and less space to perform the same computation."
 images: [/static/images/ds.jpg]
 layout: PostLayout
 ---
-
+// draft
 ## What is Data Structures and Algorithms
 Data structures are ways of organizing and storing data. Algorithms are ways of manipulating and processing data. 
 Often, algorithms are performed on specific data structures to be effective. In computation,
@@ -27,19 +27,8 @@ In order to measure the performance of an algorithm, we use `Time Complexity` an
 - Set
 - Map
 - Tree
-- 
 
 ## Java Data Structure classes and their most used methods
-Collections
-```Java
-Map<String, Integer> map = new HashMap<>();
-map.set("bike", 0);
-map.remove("bike");
-map.getKeys();
-map.containsKey("bike");
-map.getValues();
-map
-```
 
 
 

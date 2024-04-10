@@ -1,6 +1,6 @@
 ---
 title: 'A short introduction of Apache Kafka'
-date: '2024/4/3'
+date: '2024/4/10'
 lastmod: '2022/3/10'
 tags: [Kafka]
 draft: false
@@ -8,7 +8,7 @@ summary: 'As the name indicated, Kafka is about writing. Writing data. Consume a
 images: [/static/images/kafka.png]
 layout: PostLayout
 ---
-
+// draft
 ## Topic
 A topic is just an ordered collection of events that are stored in a durable way, durable meaning that they're written to disk, and they are replicated.
 They're stored on more than one disk, more than one server, so no data failure. Topics can store data in a short period of time like hours or years or infinite.
@@ -26,20 +26,4 @@ With all these data live in persistent real-time streams, now it's possible to b
 distributive log thing
 
 
-- OOP: OOP approach is about mapping the elements in the problem space into the objects in the solution space.
-- SOLID
-- Design Patterns
-- Clean Code
-- How to optimize code
-- DevOps
-- Docker
-- System Design
-- ML
 
-///
-
-- A collection of misunderstandings
-
-
-///
-- Javascript Frameworks: React, Next.js, Vue.js
