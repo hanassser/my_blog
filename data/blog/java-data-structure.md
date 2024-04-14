@@ -1,15 +1,19 @@
 ---
 title: 'Java Data Structures - Collections and Map'
-date: '2024/4/5'
+date: '2024/4/14'
 lastmod: '2022/3/10'
-tags: [yes]
-draft: true
-summary: '///'
+tags: [Java, Data Structure]
+draft: false
+summary: 'Time to check out the documentation again! And think about the big O, time complexity and space complexity! Remember data structure is used to store and operate data.'
 images: [/static/images/jds.png]
 layout: PostLayout
 ---
 
-## Time to check out the documentation again! :P
+### 💥 Time to check out the `documentation` again! 
+### 💥 Think about the big O, `time complexity` and `space complexity`!  
+### 💥 Remember data structure is used to store and operate data.
+---
+
 ## Why there are Collection Interface and Collection Class
 The Collection interface **defines the contract** for classes representing collections of objects, the Collections class provides **utility methods** for performing common operations on collections. 
 The separation between the interface and the utility class allows for flexibility and modularity in the Java Collections Framework, making it easier to work with collections in Java programs.
@@ -26,6 +30,7 @@ Collections.addAll(list, 10, 12);
 ```
 
 ## Collection Interface
+
 ```Java
 Set<Integer> set = new HashSet<>();
 List<Integer> list = new ArrayList<>();
@@ -36,6 +41,32 @@ Integer[] arr = {1, 5, 7, 9};
 List<Integer> list = Arrays.asList(arr);
 
 ```
+---
+
+## ArrayList, LinkedList
+![](/static/images/list.png)  
+
+I'm gonna compare these two in aspects of 👇👇👇
+- `Underlying Data Structure`
+  - ArrayList: uses a dynamic array to store elements. Elements are stored in a contiguous block of memory, and accessing elements by index is fast because it involves simple array indexing.
+  - LinkedList: uses a doubly linked list data structure. Each element(node) contains a reference to the previous and next elements, allowing for efficient insertion and deletion operations but slower random access. 
+- `Performance` 
+  - Random Access(get/set)
+    - ArrayList: random access operations are `O(1)` time complexity, very efficient, coz they directly access elements by index.
+    - LinkedList: `O(n)` time complexity, coz it requires traversing the list from the beginning to end to search the desired index.
+  - Insertion/Deletion
+    - ArrayList: 
+    - LinkedList: 
+- `Memory Overhead`  
+  ArrayList generally has less memory overhead per element compared to LinkedList because it doesn't need to store references to previous and next elements. 
+
+- `Iterating` 
+  - 
+- `Usage Scenarios`
+  - ArrayList: Use ArrayList when you need fast random access and when the list size doesn't change frequently.
+  - LinkedList: Use LinkedList when frequent insertion/deletion operations are expected, especially at the beginning or end of the list, and when random access is less important.
+
+---
 ## Map
 ```java
 Map<String, Integer> map = new HashMap<>();
