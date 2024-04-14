@@ -18,7 +18,7 @@ layout: PostLayout
 The Collection interface **defines the contract** for classes representing collections of objects, the Collections class provides **utility methods** for performing common operations on collections. 
 The separation between the interface and the utility class allows for flexibility and modularity in the Java Collections Framework, making it easier to work with collections in Java programs.
 
-## Collections class
+### Collections class
 ```Java
 List<Integer> list = new ArrayList<>();
 Collections.sort(list);
@@ -29,7 +29,7 @@ int min = Collections.min(min);
 Collections.addAll(list, 10, 12);
 ```
 
-## Collection Interface
+### Collection Interface
 
 ```Java
 Set<Integer> set = new HashSet<>();
