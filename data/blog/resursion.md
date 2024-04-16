@@ -135,6 +135,6 @@ So if you don't know about Recursion well, the interview is done.
 
 ## Backtracking -> Graphs -> DP
 **DP** = **Recursion** + **Memorization**
-[great explanation] about **DP**.
+[great explanation](https://www.youtube.com/watch?v=Hdr64lKQ3e4&ab_channel=TechWithNikola) about **DP**.
 
 
