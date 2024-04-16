@@ -14,6 +14,7 @@ Ironically, I learn about Recursion recursively... (first time I realize this) ð
 No matter how many times (4 times) I learned about recursion, I still get intimidated when I see one recursion problem, so I have to go back and learn it again.
 What's wrong? I think the reason is both a lack of practice and a deep understanding.
 This time I decided to dig deeper and merge this concept thoroughly in my mind.
+Before everything, I want to share a [well-explained video](https://www.youtube.com/watch?v=ngCos392W4w&ab_channel=Reducible) about recursion.
 
 ## History
 The concept of recursion has been present in mathematics (in ancient times) and computer science for many centuries. 
@@ -135,4 +136,4 @@ So if you don't know about Recursion well, the interview is done.
 ## 
 
 
-[A well-explained video](https://www.youtube.com/watch?v=ngCos392W4w&ab_channel=Reducible) about recursion.
+
