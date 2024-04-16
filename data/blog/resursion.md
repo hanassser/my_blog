@@ -54,8 +54,8 @@ So if you don't know about Recursion well, the interview is done.
   ![](/static/images/pascal.jpg)
 
 - `Edsger Dijkstra`  
-    Dude is a great Dutch computer scientist, check out his paper on [Recursive Programming](https://ics.uci.edu/~jajones/INF102-S18/readings/07_dijkstra.pdf).
-    Dijkstra's algorithm shows us the shortest path from one node to every other node.
+    [Dude](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra) is a great Dutch computer scientist, check out his paper on [Recursive Programming](https://ics.uci.edu/~jajones/INF102-S18/readings/07_dijkstra.pdf).
+    Dijkstra's algorithm finds the shortest path.
     ```Java
     import java.util.*;
 
@@ -133,7 +133,8 @@ So if you don't know about Recursion well, the interview is done.
 5. Handle base cases:
 
 
-## 
-
+## Backtracking -> Graphs -> DP
+**DP** = **Recursion** + **Memorization**
+[great explanation] about **DP**.
 
 
