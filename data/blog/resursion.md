@@ -8,9 +8,9 @@ summary: "Recursion in programming refers to the process in which a function cal
 images: [/static/images/r.jpg]
 layout: PostLayout
 ---
-## In order to understand recursion, one must first understand recursion 🫠
+## In order to understand recursion, one must first understand recursion 
 ## `Break one big problem into smaller, similar sub-problems`
-Ironically, I learn about Recursion recursively... (first time I realize this) 🫠
+Ironically, I learn about Recursion recursively... (first time I realize this).
 No matter how many times (4 times) I learned about recursion, I still get intimidated when I see one recursion problem, so I have to go back and learn it again.
 What's wrong? I think the reason is both a lack of practice and a deep understanding.
 This time I decided to dig deeper and merge this concept thoroughly in my mind.
@@ -49,9 +49,38 @@ So if you don't know about Recursion well, the interview is done.
     }
   }
   ```
-- `Pacal's Triangle`
+- `Pacal's Triangle`  
+  Compare the difference between `Pascal Triangle` and `Fibonacci Sequences`. What you got in common? In these two patterns, the latter appeared element is the sum of two other previously appeared elements.
+Fibonacci Sequences is easier, we can represent it in one line, one dimension. While Pascal Triangle is a bit more complex, it's a traingle! we can represent it in two dimensions. So what would the data look like? We can row and col.
+    
+    ![](/static/images/pascal.jpg)
 
-  ![](/static/images/pascal.jpg)
+  ```java
+  public class PacalTriangle {
+    public static int pascalValue(int row, int col){
+        if(col == 0 || col == row){
+            return 1;
+        } else {
+            return pascalValue(row - 1, col -1) + pascalValue(row - 1, col);
+        }
+    }
+    public static void printPascalTriangle(int numRows){
+        for(int i = 0; i < numRows; i++){
+            for(int j = 0; j <= i; j++){
+                System.out.print(pascalValue(i, j) + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args){
+        int numRows = 5;
+        printPascalTriangle(numRows);
+    }
+  }
+  ```
+
+
 
 - `Edsger Dijkstra`  
     [Dude](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra) is a great Dutch computer scientist, check out his paper on [Recursive Programming](https://ics.uci.edu/~jajones/INF102-S18/readings/07_dijkstra.pdf).
@@ -123,7 +152,9 @@ So if you don't know about Recursion well, the interview is done.
 
     ```
   
-
+## Recursion Function
+Every recursion function has two part, `base case` and `recursive case`. Recursive case refers when function call itself, base case refers when function stop calling itself,
+so that it won't end up in infinite loop. (think about stack)
 
 ## General Approach
 1. Identify edge case:
@@ -138,4 +169,13 @@ So if you don't know about Recursion well, the interview is done.
 
 A great [video](https://www.youtube.com/watch?v=Hdr64lKQ3e4&ab_channel=TechWithNikola) explanation about **DP**.
 
+### Backtracking
+Backtracking algorithm works by recursively exploring all possible solutions to a problem. 
+It starts by choosing an initial solution, and then it explores all possible extensions of that solution. 
+If an extension leads to a solution, the algorithm returns that solution.
+??? what to remember between each recursion? the argument in the function. 
+think of a tree structure. 
 
+- Combinations
+- Sorting
+- 

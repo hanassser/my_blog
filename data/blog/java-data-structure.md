@@ -67,7 +67,14 @@ I'm gonna compare these two in aspects of 👇👇👇
   - LinkedList: Use LinkedList when frequent insertion/deletion operations are expected, especially at the beginning or end of the list, and when random access is less important.
 
 ---
-## Map
+## Map 
+First, we should know `Hashtable` is a class that implements `Map` interface.
+Check out this [video](https://www.youtube.com/watch?v=KyUTuwz_b7Q&ab_channel=ComputerScience). It really helps me understand Hash Tables and Hash Functions.  
+Basically, `Hash Table` is a data structure that allows very fast retrieval of data no matter the size of the data or the position of the data (retrieval by index, index is calculated by hash function). It means on average, retrieve an element by index is O(1) time complexity (constant time).
+For this reason, it's wildly used in **database indexing**, **caching**, **program compilation**, **error checking** and more.  
+Then, the three most used class that implement `Map` interface are `HashMap`, `TreeMap` and `LinkedHashMap`. Look at their name, we can guess how they are implemented.
+
+
 ```java
 Map<String, Integer> map = new HashMap<>();
 map.put("bike", 2);
@@ -81,5 +88,13 @@ map.clear();
 map.keySet();
 map.getOrDefault("book", 0);
 map.isEmpty();
+
+```
+
+## PriorityQueue
+```java
+PriorityQueue<String, Integer> queue = new PriorityQueue<>();
+queue.poll();
+queue.add();
 
 ```
