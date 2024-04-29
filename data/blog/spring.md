@@ -144,6 +144,44 @@ using annotations, from application startup to the execution of a controller met
   AOP is born for **decoupling** and scalability. It enables modularization of cross-cutting concerns such as logging, security and transaction management. AOP allows developers to separate these concerns from the business logic and add them declaratively to the application.
   Developers can add new aspect without changing the source code or function flow.
   Its basic principle is **Dynamic proxy technology**, the same as **Proxy design pattern**. (check out my article about [Design Pattern](https://www.hang-dong.work/blog/design-pattern)).
+    - How to implement it?  
+      - First annotate a class with `@Aspect` to mark it as an aspect. 
+      - THen define `pointcut` expressions using annotations like `@Before`, `@After`, or `@Around` to specify where the aspect should be applied. 
+      - Implement `advice methods` within the aspect class, containing the logic to be executed at the specified points. 
+      - Configure the aspect and pointcut expressions in the Spring application context. 
+      - Finally, ensure that the aspect is properly triggered at the designated join points during runtime to apply the desired behavior across the application.
+    ```xml
+    <aop:config>
+        <aop:aspect ref="TransactionManager">
+            <aop:pointcut id="pt" expression="execution(public void service.impl.UserServiceImpl.insert())"/>
+            <aop:before method="begin" pointcut-ref="pt"/>
+            <aop:after-returning method="commit" pointcut-ref="pt"/> <aop:after-throwing method="rollback" pointcut-ref="pt"/> <aop:after method="closeSession" pointcut-ref="pt"/>
+        </aop:aspect>
+    </aop:config>
+    ```
+    ```Java
+    @Aspect
+    @Component
+    public class TransactionManagerHandler{
+      @Pointcut("execution(public void service.imple.UserServiceImpl.insert())")
+      public void pointcut(){}
+    
+      @Before("pointcut()")
+      public void begin(){
+      System.out.println("start transaction");
+      }
+    
+      @AfterReturning("pointcut()")
+      public void commit(){
+      System.out.println("submitted transaction");
+      }
+    
+      @AfterThrowing("pointcut()")
+      public void rollback(){
+      System.out.println("rollback transaction");
+      }     
+    }
+    ```
 
 ## The lifecycle of a bean
 - **Instantiation**: Beans are created by the Spring container.
@@ -152,7 +190,6 @@ using annotations, from application startup to the execution of a controller met
 - **Initialization**: Initialization callbacks are invoked.
 - **Bean Ready for Use**: Beans is fully configured and available.
 - **Destruction**: Beans are destroyed when the application context shuts down or explicitly destroyed.
-  
 
 
 
