@@ -1,5 +1,5 @@
 ---
-title: "Design Pattern explained with code"
+title: "Design Patterns explained with code"
 date: '2024/4/29'
 lastmod: '2022/3/10'
 tags: [Design pattern]
