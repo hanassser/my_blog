@@ -2,7 +2,7 @@
 title: 'Java Data Structures - Collections and Map'
 date: '2024/4/14'
 lastmod: '2022/3/10'
-tags: [Java, Data Structure]
+tags: [Java, Data Structures]
 draft: false
 summary: 'Time to check out the documentation again! And think about the big O, time complexity and space complexity! Remember data structure is used to store and operate data.'
 images: [/static/images/jds.png]
@@ -73,7 +73,9 @@ Check out this [video](https://www.youtube.com/watch?v=KyUTuwz_b7Q&ab_channel=Co
 Basically, `Hash Table` is a data structure that allows very fast retrieval of data no matter the size of the data or the position of the data (retrieval by index, index is calculated by hash function). It means on average, retrieve an element by index is O(1) time complexity (constant time).
 For this reason, it's wildly used in **database indexing**, **caching**, **program compilation**, **error checking** and more.  
 Then, the three most used class that implement `Map` interface are `HashMap`, `TreeMap` and `LinkedHashMap`. Look at their name, we can guess how they are implemented.
-
+- `HashMap` are designed for rapid access. 
+- `TreeMap` keeps its keys in sorted order, thus is not as fast as a `HashMap`. 
+- `LinkedHashMap` keeps its element in insertion order, but provides rapid access with hashing.
 
 ```java
 Map<String, Integer> map = new HashMap<>();

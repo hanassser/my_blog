@@ -4,11 +4,14 @@ date: '2024/4/10'
 lastmod: '2022/3/10'
 tags: [Kafka]
 draft: false
-summary: 'As the name indicated, Kafka is about writing. Writing data. Consume and produce data. '
+summary: 'As the name indicated, Kafka is about writing. Writing data. Consume and produce data. It is an open-source distributed event streaming platform used for building real-time data pipelines and streaming applications.'
 images: [/static/images/kafka.png]
 layout: PostLayout
 ---
-// draft
+## What is Kafka?
+Kafka is a distributed streaming platform, that allow `producers` to send events of streams to the `broker`, and `consumers` can receive events from `broker` through `topics`.
+  
+![](/static/images/kafka-1.png)
 ## Topic
 A topic is just an ordered collection of events that are stored in a durable way, durable meaning that they're written to disk, and they are replicated.
 They're stored on more than one disk, more than one server, so no data failure. Topics can store data in a short period of time like hours or years or infinite.
@@ -25,5 +28,6 @@ With all these data live in persistent real-time streams, now it's possible to b
 
 distributive log thing
 
+![](/static/images/kafka-2.png)
 
 

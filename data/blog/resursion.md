@@ -163,7 +163,36 @@ so that it won't end up in infinite loop. (think about stack)
 4. Combine results:
 5. Handle base cases:
 
-
+## Exercises
+- Tree Traversal
+    ```Java
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(){}
+        TreeNode(int v){
+            val = v;
+        }
+        TreeNode(int v, TreeNode r, TreeNode l){
+            val = v;
+            right = r;
+            left = l;
+        }
+    
+        public List<Integer> preorderTraversal(TreeNode root){
+            List<Integer> list = new ArrayList<>();
+            preorder(root, list);
+            return list;
+        }
+        public void preorder(TreeNode root, List<Integer> result){
+            if(root == null) return;
+            result.add(root.val);
+            preorder(root.left, result);
+            preorder(root.right, result);
+        }
+    }
+    ```
 ## Backtracking -> Graphs -> DP
 **DP** = **Recursion** + **Memorization**  
 
