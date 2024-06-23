@@ -2,7 +2,7 @@
 title: '一部触碰到我灵魂的电影 Non ti muovere'
 date: '2024/6/23'
 lastmod: '2022/3/10'
-tags: [microservices, project]
+tags: [film]
 draft: false
 summary: '一部触碰到我灵魂的电影 Non ti muovere，2004年 Sergio Castellitto 执导。 这部电影是心理学加神学。'
 images: [/static/images/dmove.jpg]
